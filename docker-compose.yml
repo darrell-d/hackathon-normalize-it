@@ -3,8 +3,9 @@ version: '3.9'
 services:
   normalize-it:
     volumes:
-      - .:/app
-    container_name: normalize-it
+      - .:/code
+    container_name: normalize-it-hackathon
     build:
       context: .
       dockerfile: ./Dockerfile
+    command: bash -c "Rscript app.r && tail -f app.r"

@@ -1,10 +1,2 @@
-# Rocker base image
-FROM rocker/rstudio
-
-# Set work dir
-WORKDIR /app
-
-RUN apt clean && apt-get update
-
-# Copy files into image
-COPY . .
+# Use the existing image as the base image
+FROM pennsieveci/normalize_it:latest
