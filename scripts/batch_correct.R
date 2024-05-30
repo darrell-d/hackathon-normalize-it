@@ -35,7 +35,7 @@ option_list <- list(
 # Parse command-line options
 opt_parser <- OptionParser(option_list=option_list)
 opt <- parse_args(opt_parser)
-fcs_dir <- "/service/data/input/fcs"
+fcs_dir <- "/service/data/input"
 output_dir <- "/service/data/output"
 input_dir <- "/service/data/input"
 ################### END: Define & parse command-line options ###################

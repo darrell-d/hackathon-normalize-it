@@ -8,4 +8,4 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    command: bash -c "Rscript app.r && tail -f app.r"
+    command: bash -c "Rscript scripts/batch_correct.R -o /service/data/output -f /service/data/input/ -i file_metadata.csv"
