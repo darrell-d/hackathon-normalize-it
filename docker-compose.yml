@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  normalize-it:
+    volumes:
+      - .:/app
+    container_name: normalize-it
+    build:
+      context: .
+      dockerfile: ./Dockerfile
