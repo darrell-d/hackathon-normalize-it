@@ -15,11 +15,10 @@ suppressMessages({
   library(tidyverse) 
   library(configr)
   library(optparse)
+  library(dotenv)
 })
+dotenv::load_dot_env()
 
-
-# INPUT_DIR=/service/data/input
-# OUTPUT_DIR=/service/data/output
 
 ###################### Define & parse command-line options #####################
 # Define command-line options

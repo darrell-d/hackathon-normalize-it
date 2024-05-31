@@ -4,8 +4,8 @@ services:
   normalize-it:
     volumes:
       - .:/code
-    container_name: normalize-it-hackathon
+    container_name: normalize-it-runner
     build:
       context: .
       dockerfile: ./Dockerfile
-    command: bash -c "Rscript scripts/batch_correct.R -o /service/data/output -f /service/data/input/ -i file_metadata.csv"
+    command: bash -c "Rscript /code/scripts/batch_correct.R"
